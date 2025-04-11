@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Hình ảnh ký túc xá, học bổng, cơ sở vật chất */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hiệu ứng khi đưa chuột vào ảnh */
+.image-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Khu vực thông tin tuyển sinh */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    width: 45%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hiệu ứng nổi lên khi đưa chuột vào box */
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 15px;
+}
+
+h2 {
+    background-color: #a00;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Danh sách tuyển sinh */
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hiệu ứng hover cho từng mục danh sách */
+li:hover {
+    color: #a00;
+    transform: translateX(5px);
+}

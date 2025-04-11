@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2 {
+    color: #a50000;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.training-box {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: left;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-box img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.title h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.title a {
+    font-size: 12px;
+    color: #d50000;
+    text-decoration: none;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+
+.training-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer-box {
+    display: flex;
+    background: #a50000;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.footer-box button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.footer-box button:hover {
+    background: #700000;
+}
